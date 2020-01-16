@@ -1,0 +1,191 @@
+#puppies-idea {
+    font-family: 'Raleway Dots', sans-serif;
+    grid-area: gallery-p;
+    font-size: 23px;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#index-puppies-gallery {
+    padding: 3vh 5vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img5 img6"
+        "img7 img8 img9"
+        "img10 img11 img12"
+        "img13 img14 img15";  
+}
+
+#index-puppies-gallery .puppy-box  {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    margin: auto;
+}
+
+#index-puppies-gallery .img1 {
+    grid-area: img1;
+    background-image: url("../foto/puppies-thumbs/img1.jpg");
+}
+
+#index-puppies-gallery .img2 {
+    grid-area: img2;
+    background-image: url("../foto/puppies-thumbs/img2.jpg");
+}
+
+#index-puppies-gallery .img3 {
+    grid-area: img3;
+    background-image: url("../foto/puppies-thumbs/img3.jpg");
+}
+
+#index-puppies-gallery .img4 {
+    grid-area: img4;
+    background-image: url("../foto/puppies-thumbs/img4.jpg");
+}
+
+#index-puppies-gallery .img5 {
+    grid-area: img5;
+    background-image: url("../foto/puppies-thumbs/img5.jpg");
+}
+
+#index-puppies-gallery .img6 {
+    grid-area: img6;
+    background-image: url("../foto/puppies-thumbs/img6.jpg");
+}
+
+#index-puppies-gallery .img7 {
+    grid-area: img7;
+    background-image: url("../foto/puppies-thumbs/img7.jpg");
+}
+
+#index-puppies-gallery .img8 {
+    grid-area: img8;
+    background-image: url("../foto/puppies-thumbs/img8.jpg");
+}
+
+#index-puppies-gallery .img9 {
+    grid-area: img9;
+    background-image: url("../foto/puppies-thumbs/img9.jpg");
+}
+
+#index-puppies-gallery .img10 {
+    grid-area: img10;
+    background-image: url("../foto/puppies-thumbs/img10.jpg");
+}
+
+#index-puppies-gallery .img11 {
+    grid-area: img11;
+    background-image: url("../foto/puppies-thumbs/img11.jpg");
+}
+
+#index-puppies-gallery .img12 {
+    grid-area: img12;
+    background-image: url("../foto/puppies-thumbs/img12.jpg");
+}
+
+#index-puppies-gallery .img13 {
+    grid-area: img13;
+    background-image: url("../foto/puppies-thumbs/img13.jpg");
+}
+
+#index-puppies-gallery .img14 {
+    grid-area: img14;
+    background-image: url("../foto/puppies-thumbs/img14.jpg");
+}
+
+#index-puppies-gallery .img15 {
+    grid-area: img15;
+    background-image: url("../foto/puppies-thumbs/img15.jpg");
+}
+
+.puppy-box div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puppy-box div:hover {
+    opacity: 0.6;
+    transition: all 1.2s;
+}
+
+.puppy-box a {
+    font-family: 'Poiret One', sans-serif;
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.img-window {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100; 
+}
+
+.img-window img {
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+.img-btn-next {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: 'Poiret One', sans-serif;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.img-btn-next:hover{
+    opacity: 0.5;
+}
+
+.img-btn-prev {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 48vh;
+    z-index: 500;
+    font-family: 'Poiret One', sans-serif;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.img-btn-prev:hover{
+    opacity: 0.5;
+    
+}
